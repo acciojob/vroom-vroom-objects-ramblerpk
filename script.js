@@ -16,14 +16,10 @@ function SportsCar(make, model, topSpeed) {
     this.topSpeed = topSpeed;
 }
 
-// Step 4: getTopSpeed Method
-SportsCar.prototype.getTopSpeed = function() {
-    return this.topSpeed;
-};
-
-// Step 5: Set up inheritance
 SportsCar.prototype = Object.create(Car.prototype);
-SportsCar.prototype.constructor = SportsCar;
+SportsCar.prototype.constructor = SportsCar
+
+
 // Do not change the code below
 window.Car = Car;
 window.SportsCar = SportsCar;
